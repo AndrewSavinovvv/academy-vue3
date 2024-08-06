@@ -1,6 +1,6 @@
 <template>
   <section class="info">
-    <div class="container flex">
+    <div class="info__wrapper container flex">
       <div class="info__left">
         <p>Кем вы хотите стать?</p>
 
@@ -11,26 +11,26 @@
       </div>
       <div class="info__right">
         <div class="flex">
-          <div class="info__right-perlonal">
-            <div class="flex">
-              <img src="/src/assets/img/children.svg" alt="" />
+          <div class="info__right-personal">
+            <img src="/src/assets/img/children.svg" alt="" class="info__image" />
+            <div class="info__text">
               <h4>Дети</h4>
+              <span>8 - 14 лет</span>
             </div>
-            <span>8 - 14 лет</span>
           </div>
-          <div class="info__right-perlonal">
-            <div class="flex">
-              <img src="/src/assets/img/children (1).svg" alt="" />
+          <div class="info__right-personal">
+            <img src="/src/assets/img/children (1).svg" alt="" class="info__image" />
+            <div class="info__text">
               <h4>Подростки</h4>
+              <span>14 - 18 лет</span>
             </div>
-            <span>14 - 18 лет</span>
           </div>
-          <div class="info__right-perlonal">
-            <div class="flex">
-              <img src="/src/assets/img/family.svg" alt="" />
+          <div class="info__right-personal">
+            <img src="/src/assets/img/family.svg" alt="" class="info__image" />
+            <div class="info__text">
               <h4>Взрослые</h4>
+              <span>18 — ∞</span>
             </div>
-            <span>18 — ∞ </span>
           </div>
         </div>
         <div class="info__right-profession">
@@ -50,7 +50,6 @@
     </div>
   </section>
 </template>
-
 <style lang="scss">
 $primary-color: #f7941d;
 $border-radius: 20px;
@@ -103,7 +102,9 @@ $img-height: 70px;
       border-bottom: 1px solid gray;
     }
 
-    &-perlonal {
+    &-personal {
+      display: flex;
+      align-items: center;
       position: relative;
 
       &::after {
@@ -123,13 +124,13 @@ $img-height: 70px;
         background: $primary-color;
       }
 
-      .flex {
-        display: flex;
-        align-items: center;
+      .info__image {
+        margin-right: 20px; /* Отступ между изображением и текстом */
       }
 
-      img {
-        margin-right: 10px;
+      .info__text {
+        display: flex;
+        flex-direction: column;
       }
 
       h4 {
@@ -137,7 +138,7 @@ $img-height: 70px;
       }
 
       span {
-        margin-left: 10px;
+        margin-top: 5px;
       }
     }
 
@@ -168,8 +169,11 @@ $img-height: 70px;
   }
 }
 
-@media (max-width: 1198px) {
+@media (max-width: 1300px) {
   .info {
+    &__wrapper {
+      display: block;
+    }
     &__left {
       padding: 12px;
       position: relative;
@@ -187,9 +191,18 @@ $img-height: 70px;
         line-height: 20px;
       }
     }
+    &__right > .flex {
+      padding: 10px;
+    }
 
-    &__right-perlonal {
+    &__right-personal {
       padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info__image {
+      margin-right: 0;
     }
   }
 }

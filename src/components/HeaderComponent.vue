@@ -35,6 +35,13 @@ function toggleMenu() {
 </script>
 
 <style lang="scss">
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .header {
   padding: 20px;
   position: relative;
@@ -49,6 +56,7 @@ function toggleMenu() {
     align-items: center;
     list-style: none;
     color: #000000;
+    max-width: 100%;
 
     &:nth-child(5) {
       padding-left: 40px;
@@ -108,11 +116,12 @@ function toggleMenu() {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 85%;
+    left: 0px;
     z-index: 999;
     background-color: white;
     width: 100%;
+    box-sizing: border-box;
 
     &:nth-child(5) {
       padding-left: 0;
@@ -131,6 +140,7 @@ function toggleMenu() {
 
   .header__burger-menu {
     display: flex;
+    justify-content: center;
   }
 
   .header__container {
