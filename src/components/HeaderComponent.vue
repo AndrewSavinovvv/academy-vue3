@@ -1,26 +1,26 @@
 <template>
   <header class="header">
     <div class="container flex space-between">
-      <img class="header__logo" src="/src/img/logo.svg" alt="Academy Logo" />
+      <img class="header__logo" src="/src/assets/img/logo.svg" alt="Academy Logo" />
       <div class="header__burger-menu" @click="toggleMenu()">
         <div class="header__burger-bar"></div>
         <div class="header__burger-bar"></div>
         <div class="header__burger-bar"></div>
       </div>
       <ul class="header__list">
-        <li><img src="/src/img/все.svg" alt="" /> Все курсы</li>
+        <li><img src="/src/assets/img/все.svg" alt="" /> Все курсы</li>
         <li>Мероприятия</li>
         <li>Базы знаний</li>
         <li>Карьера</li>
         <li>
           <a href="#">
-            <img src="/src/img/geo.svg" alt="" />Нижний Новгород
-            <img src="/src/img/down.svg" alt="" />
+            <img src="/src/assets/img/geo.svg" alt="" />Нижний Новгород
+            <img src="/src/assets/img/down.svg" alt="" />
           </a>
         </li>
         <li>8 800 950 33 98</li>
         <li>
-          <button class="header__btn"><img src="/src/img/вход.svg" alt="" />Войти</button>
+          <button class="header__btn"><img src="/src/assets/img/вход.svg" alt="" />Войти</button>
         </li>
       </ul>
     </div>

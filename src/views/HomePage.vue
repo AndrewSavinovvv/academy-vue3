@@ -1,7 +1,9 @@
 <template>
-  <HeaderComponent />
+  <ContentComponents />
+  <InfoComoponents />
 </template>
 
 <script setup>
-import HeaderComponent from '@/components/HeaderComponent.vue'
+import InfoComoponents from '@/components/InfoComoponents.vue'
+import ContentComponents from '@/components/ContentComponents.vue'
 </script>
