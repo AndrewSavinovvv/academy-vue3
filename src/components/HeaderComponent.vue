@@ -35,13 +35,6 @@ function toggleMenu() {
 </script>
 
 <style lang="scss">
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
 .header {
   padding: 20px;
   position: relative;
@@ -129,7 +122,6 @@ body {
 
     &.active {
       display: flex;
-      align-items: flex-start;
     }
 
     li {

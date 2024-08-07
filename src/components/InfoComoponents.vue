@@ -125,7 +125,7 @@ $img-height: 70px;
       }
 
       .info__image {
-        margin-right: 20px; /* Отступ между изображением и текстом */
+        margin-right: 20px;
       }
 
       .info__text {
@@ -171,6 +171,8 @@ $img-height: 70px;
 
 @media (max-width: 1300px) {
   .info {
+    margin-right: 60px;
+    margin-left: 60px;
     &__wrapper {
       display: block;
     }
@@ -178,6 +180,7 @@ $img-height: 70px;
       padding: 12px;
       position: relative;
       height: auto;
+      width: 100%;
 
       img {
         position: absolute;
