@@ -135,10 +135,12 @@ $img-height: 70px;
 
       h4 {
         margin: 0;
+        text-align: center;
       }
 
       span {
         margin-top: 5px;
+        text-align: center;
       }
     }
 
@@ -171,8 +173,6 @@ $img-height: 70px;
 
 @media (max-width: 1300px) {
   .info {
-    margin-right: 60px;
-    margin-left: 60px;
     &__wrapper {
       display: block;
     }
@@ -180,7 +180,6 @@ $img-height: 70px;
       padding: 12px;
       position: relative;
       height: auto;
-      width: 100%;
 
       img {
         position: absolute;
@@ -193,9 +192,6 @@ $img-height: 70px;
         font-size: 14px;
         line-height: 20px;
       }
-    }
-    &__right > .flex {
-      padding: 10px;
     }
 
     &__right-personal {
