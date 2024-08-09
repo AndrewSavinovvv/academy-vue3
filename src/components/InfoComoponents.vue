@@ -91,7 +91,6 @@ $img-height: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 40px;
 
     > .flex {
       display: flex;
@@ -141,6 +140,8 @@ $img-height: 70px;
       span {
         margin-top: 5px;
         text-align: center;
+        color: #4f4f4f;
+        margin-bottom: 2px;
       }
     }
 
@@ -175,6 +176,7 @@ $img-height: 70px;
   .info {
     &__wrapper {
       display: block;
+      padding: 10px;
     }
     &__left {
       padding: 12px;
