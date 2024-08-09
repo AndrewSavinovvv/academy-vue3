@@ -91,6 +91,7 @@ $img-height: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 20px;
 
     > .flex {
       display: flex;
